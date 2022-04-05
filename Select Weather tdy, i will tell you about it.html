@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Select weather and This will tell you about it</title>
+
+        <style>
+            
+            body{
+                background: url("https://www.dropbox.com/s/jgsev4htr5abbyl/Weather.jpg?raw=1") no-repeat center fixed;
+                background-size: cover; 
+                
+            }
+
+            section{
+                padding: 5% 0;
+                
+            }
+            
+            label{
+                font-size: 3.5em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;   
+            }
+            option{
+                font-size: 1.4em;
+            }
+
+            select{
+                width: 50%;
+                height: 2em;
+                border-radius: 10px;
+                background-color: rgba(214, 234, 252, 0.781);
+                text-align: center;
+            }
+
+            .SunnyWeather, .RainyWeather, .SnowingWeather, .OvercastWeather, .WindyWeather,
+            .StormyWeather, .FoggyWeather{
+                display: none;
+                font-size: 2em;
+                text-align: center;
+                color: rgb(241, 241, 241);
+                max-width: 60%;
+                margin:0 auto;
+                padding: 5% 5%;
+                backdrop-filter: blur(3px);
+                border: 1px solid white;
+                border-radius: 50px;
+                background-color: rgba(151, 208, 255, 0.199);
+            }
+             
+        </style>
+    </head>
+    <body>
+        <section>
+            <label for="weather"><b>Select the Weather type today & I will tell you about it. </b><br>
+
+            <select class="weatherType">
+                <option value="">Please choose one...</option>
+                <option value="Sunny">Sunny</option>
+                <option value="Rainy">Rainy</option>
+                <option value="Snowing">Snowy</option>
+                <option value="Overcast">Overcast</option>
+                <option value="Windy">Windy</option>
+                <option value="Stormy">Stormy</option>
+                <option value="Foggy">Foggy</option>
+            </select>
+            </label>
+            <div class="SunnyWeather">
+                <h2 class="weatherTitle"><u>SUNNY & CLEAR</u></h2>
+                <p>
+                    Sunny days are when you can see the sun the most. 
+                    There are almost no visible clouds, and temperatures rise during the day. 
+                    However, this doesn’t happen because “there are no clouds” but because the clouds are above the horizon.
+                </p>
+                <p>
+                    People can’t see clouds on sunny days because they are out of their sight range. 
+                    However, they are just above what people can see in the sky, which makes them think there are absolutely no clouds in it.
+                </p>
+                <p>
+                    Those conditions can also be met at night. When there are no clouds below the horizon at night, we can see the stars more clearly.
+                    That also makes the temperature go down, which is the reason why nights are colder sometimes.
+                </p>
+            </div>
+
+            <div class="RainyWeather">
+                <h2 class="weatherTitle"><u>RAINY & DRIZZLE</u></h2>
+                <p>
+                    Rain forms part of the rain cycle and represents a process that is fundamental to our planet.
+                    When the sun warms the ocean’s water, it becomes water vapor and goes to the sky, creating clouds.
+                </p>
+                <p>
+                    When these clouds go through a cold air current, the water vapor condenses and go down to the ground again, this time in the form of water duplets.
+                    Considering that, we can say that rain happens when clouds go through sudden cold air currents.
+                </p>
+                <p>
+                    Drizzle is simply raining on a minor scale. Water drops are smaller, and it happens for a short time. That often happens before heavy rain or after it.
+                    You can recognize that it’s going to rain by looking at the clouds.
+                </p>
+                <p>
+                    As said before, cloudy skies and overcast are a sign of rain. Just as it happens with wind, rain is more common in some places than in others. 
+                    When rain is common in a place, it’s difficult to see sunny days and clear skies there.
+                </p>
+            </div>
+
+            <div class="SnowingWeather">
+                <h2 class="weatherTitle"><u>SNOWY</u></h2>
+                <p>
+                    Something that differentiates snow from other weather conditions is that it doesn’t happen in all countries.
+                    There are some countries and cities where snow doesn’t happen at all regardless of the weather of the place.
+                </p>
+                <p>
+                    That’s because snow is the solid conversion of water. When the sky gets to a temperature below zero degrees, the water in the clouds freezes and starts dropping down. 
+                    Naturally, when this happens, all places are at a low temperature, and there’s not a clear vision of the sun.
+                </p>
+                <p>
+                    It’s crucial to be careful when this happens since snow can bring numerous issues to our daily lives. Snow can block roads, gates, and harm some people.
+                     If it gets to an extreme case, it can become a blizzard, which is a major problem to people and definitely and danger to society.
+                </p>
+            </div>
+
+            <div class="OvercastWeather">
+                <h2 class="weatherTitle"><u>OVERCAST,CLOUDY & PARTIALLY CLOUDY</u></h2>
+                <p class="aboutWeather">
+                    The terms cloudy, partially cloudy, and overcast are used to describe the number of clouds that cover the sky. 
+                    When the weather is partially cloudy, it means that there are some visible clouds in the sky.
+                    Yet, those clouds don’t permanently cover the sun, and the temperature can still be warm.
+                </p>
+                <p>
+                    There are some areas where partially cloudy skies are more common than sunny days. However, that depends on the city or country where you live.
+                </p>
+                <p>
+                    Cloudy days, on the other hand, happen when several clouds are hiding the sun. That doesn’t mean the sky is filled with clouds, though. 
+                    It only means that it mostly has them. If those clouds look darker than usual, it may be a sign of a short rain or a storm. Many people associate cloudy days with rain. 
+                    Regardless of that, heavy rains and dangerous thunderstorms are more often preceded by an overcast.
+                </p>
+                <p>
+                    You can recognize an overcast sky by the color of the clouds. If the sky is mostly gray and you see dark colors, then it’s probably overcast.
+                     The World Meteorological Organization describes this type of weather as the meteorological condition where clouds cover at least 95% of the sky.
+                     There’s little to no natural light when this happens. There can be white clouds, but they are not too abundant.
+                </p>
+            </div>
+
+            <div class="WindyWeather">
+                <h2 class="weatherTitle"><u>WINDY</u></h2>
+                
+                <p>
+                    As the name suggests, when there is a lot of warm air moving through the earth’s surface, we refer to it as “windy.” 
+                    Wind tends to happen when there are sudden temperature changes, which causes the atmosphere’s gases to move wildly to find a balance.
+                </p>
+                <p>
+                    Mountains are excellent examples of this phenomenon. During the day, the mountain temperature rises while the ground’s temperature gets lower. 
+                    This causes the air currents to switch to find a balance between the two temperatures.
+                </p>
+                <p>
+                    What people know as wind is the movement of those air currents switching from one to another. That causes hot or warm wind. 
+                    There are some countries, cities, and even blocks where the wind is more constant than in other places.
+                    That tends to happen in places close to beaches, mountains, and bodies of water in general.
+                </p>
+            </div>
+
+            <div class="StormyWeather">
+                <h2 class="weatherTitle"><u>STORMY</u></h2>
+                <p>
+                    Storms are one of the most dangerous meteorological events since they produce lightning. Lightning can harm the environment and even hurt or kill a person if it hits them.
+                     That’s why the most recommended thing when the weather is stormy is to stay home to prevent any problem from happening.
+                </p>
+                <p>
+                    This meteorological condition is caused when a low-pressure center grows with a high-pressure center. As said before, storms are accompanied by lightning and strong wind. 
+                    These are not as common as the other types of weather. However, they could happen at any time.
+                </p>
+            </div>
+
+            <div class="FoggyWeather">
+                <h2 class="weatherTitle"><u>Foggy</u></h2>
+                <p>
+                    An easy way to understand fog is to consider it a low-lying cloud or a cloud at ground level. This happens when water vapor condenses and stays in the air, forming clouds on the ground. 
+                    Even though fog doesn’t happen often, it can happen anywhere.
+                </p>
+                <p>
+                    Fog can’t cause direct damage to human beings like storms to do, but can indirectly harm them in different ways. This weather condition makes it difficult for drivers to see the road and therefore other cars.
+                     Considering that, it’s highly dangerous to drive while there’s fog.
+                </p>
+                <p>
+                    Apart from that, fog considerably increases the humidity level. That could represent a nuisance to people who have humidity problems at home or suffer from allergies.
+                </p>
+            </div>
+        </section>
+        <script>
+            const selector = document.querySelector('select'); //What was wrong error here? while using "weatherType" ? 
+            const Sunnycard = document.querySelector('.SunnyWeather');
+            const Rainycard = document.querySelector('.RainyWeather');
+            const Snowingcard = document.querySelector('.SnowingWeather');
+            const Overcastcard = document.querySelector('.OvercastWeather');
+            const Windycard = document.querySelector('.WindyWeather');
+            const Stormycard = document.querySelector('.StormyWeather');
+            const Foggycard = document.querySelector('.FoggyWeather');
+
+            const selectorLabel = document.querySelector('label');
+           
+
+            selector.addEventListener('change', setWeather);
+
+            function setWeather() {
+                const choice = selector.value;
+
+                if (choice === "Sunny") {
+                    Sunnycard.style.display = "block"; // why add a [0] to work for display property when i used let Sunnycard = document.getElementbyClassName('SunnyWeather'); ?
+                    Sunnycard.style.color = "black";
+                    selectorLabel.style.display = "none";
+                    document.body.style.background = 
+                    "url('https://www.dropbox.com/s/hd0cohukiudicog/Sunny.jpg?raw=1')";
+
+                } else if (choice === "Rainy") {
+                    Rainycard.style.display = "block";
+                    selectorLabel.style.display = "none";
+                    document.body.style.background = 
+                    "url('https://www.dropbox.com/s/1d9ztrrroy6i7sq/Rainy.jpg?raw=1')";
+
+                } else if (choice === "Snowing") {
+                    Snowingcard.style.display = "block";
+                    selectorLabel.style.display = "none";
+                    document.body.style.background = 
+                    "url('https://www.dropbox.com/s/tzsoj0mitfa0rvu/Snowy.jpg?raw=1')";
+
+                } else if (choice === "Overcast") {
+                    Overcastcard.style.display = "block";
+                    selectorLabel.style.display = "none";
+                    document.body.style.background = 
+                    "url('https://www.dropbox.com/s/fm8pmnj7o9kf65k/Overcast.jpg?raw=1')";
+                    
+
+                } else if (choice === "Windy") {
+                    Windycard.style.display = "block";
+                    selectorLabel.style.display = "none";
+                    document.body.style.backgroundImage = 
+                    "url('https://www.dropbox.com/s/08v9l9hs1xg1yqk/Windy.jpg?raw=1')";
+
+                } else if (choice === "Stormy") {
+                    Stormycard.style.display = "block";
+                    selectorLabel.style.display = "none";
+                    document.body.style.background = 
+                    "url('https://www.dropbox.com/s/tzsoj0mitfa0rvu/Snowy.jpg?raw=1')";
+
+                } else if (choice === "Foggy") {
+                    Foggycard.style.display = "block";
+                    selectorLabel.style.display = "none";
+                    document.body.style.background = 
+                    "url('https://www.dropbox.com/s/mtc4fdl7hxuwr8t/Foggy.jpg?raw=1')";
+
+                }  else {
+                    selectorLabel.style.display = "none";
+                };
+            }
+        </script>
+
+    </body>
+</html>
